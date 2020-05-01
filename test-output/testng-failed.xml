@@ -3,9 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Academy.ValidateNavgationBar">
+        <methods>
+          <include name="NavigationBarValidation"/>
+        </methods>
+      </class> <!-- Academy.ValidateNavgationBar -->
+      <class name="Academy.ValidateTitle">
+        <methods>
+          <include name="TitleValidation"/>
+        </methods>
+      </class> <!-- Academy.ValidateTitle -->
       <class name="Academy.Homepage">
         <methods>
-          <include name="basePageNavigation" invocation-numbers="1"/>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- Academy.Homepage -->
     </classes>
